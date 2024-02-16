@@ -1,0 +1,26 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+}
+body{
+    height: 100vh;
+    background-color: cadetblue;
+}
+.dropdown{
+    background-color: grey;
+    color: white;
+    display: flex;
+}
+.dropdown a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.dropdown ul{
+    display: block;
+    position: relative;
+}
+.languages {
+    display: block;
+    position: relative;
+}
