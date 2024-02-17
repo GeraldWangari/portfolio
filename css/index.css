@@ -1,11 +1,93 @@
 :root{
-    --primaryColor:rgb(27, 182, 27);
-    --primaryColor:black;
-    --primaryColor:black;
+    --accentColor:rgb(57, 143, 0);
+    --primaryColor:white;
+    --secondaryColor:black;
 }
 body{
-    display: border-box;
-    background-image: url(/images/prtfBackground.jpg);
-    background-size: cover;
-    background-blend-mode:difference;
+  background-color: var(--primaryColor);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primaryColor);
+    border-bottom: 1px solid var(--accentColor);
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    color: var(--accentColor);
+}
+.logo img {
+    max-width: 50px;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.navigation ul li:last-child {
+    margin-right: 0;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: var(--secondaryColor);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+    color: var(--accentColor);
+}
+main{
+    border-bottom: 1px solid var(--accentColor);
+}
+/*all above code is for header and footer section*/
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-side {
+    flex: 1;
+    padding: 20px;
+}
+.left-side button{
+    background-color: var(--accentColor);
+    padding:10pt;
+    width: 40%;
+    border: 0;
+    border-radius: 5px;
+}
+.left-side button a{
+    text-decoration: none;
+    color: var(--primaryColor);
+}
+.right-side {
+    flex: 1;
+    padding: 20px;
+}
+.profile-image {
+    float: right;
+    width: fit-content;
+    max-width: 50%;
+    height: auto;
+    border-radius: 5%;
+    margin-right: 10pt;
 }
