@@ -1,56 +1,65 @@
 :root{
-    --accentColor:rgb(27, 182, 27);
-    --primaryColor:white;
     --secondaryColor:black;
+    --primaryColor:#4c8887;
+    --accentColor:#FFD166;
+    --headingfont:'Montserrat', sans-serif;
+    --contentfont: "Lato", sans-serif;;
 }
+
+h1, h2, h3 {
+    font-family: var(--headingfont)
+}  
 body{
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+  font-family: var(--contentfont);
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
     background-color: var(--primaryColor);
-  }
-  header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      background-color: var(--primaryColor);
-      border-bottom: 1px solid var(--accentColor);
-  }
-  main{
     border-bottom: 1px solid var(--accentColor);
-} 
-  .logo{
-      display: flex;
-      flex-direction: row;
-      color: var(--accentColor);
-  }
-  .logo img {
-      max-width: 50px;
-      border-radius: 10px;
-      margin-right: 5px;
-  }
-  
-  .navigation ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-  }
-  
-  .navigation ul li {
-      display: inline-block;
-      margin-right: 30px;
-  }
-  
-  .navigation ul li:last-child {
-      margin-right: 0;
-  }
-  
-  .navigation ul li a {
-      text-decoration: none;
-      color: var(--secondaryColor);
-      font-weight: bold;
-      transition: color 0.3s ease;
-  }
-  
-  .navigation ul li a:hover {
-      color: var(--accentColor);
-  }
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    color: var(--accentColor);
+}
+.logo img {
+    max-width: 50px;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.navigation ul li:last-child {
+    margin-right: 0;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: var(--secondaryColor);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+    color: var(--accentColor);
+}
+main{
+    border-bottom: 1px solid var(--accentColor);
+}
 /*all above code is for header and footer  
