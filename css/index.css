@@ -89,6 +89,7 @@ main{
     text-decoration: none;
     color: var(--secondaryColor);
 }
+
 .right-side {
     flex: 1;
     padding: 20px;
