@@ -1,7 +1,7 @@
 :root{
     --secondaryColor:black;
-    --primaryColor:#4c8887;
-    --accentColor:#FFD166;
+    --primaryColor:white;
+    --accentColor:rgb(93, 241, 93);
     --headingfont:'Montserrat', sans-serif;
     --contentfont: "Lato", sans-serif;;
 }
@@ -62,4 +62,81 @@ header {
 main{
     border-bottom: 1px solid var(--accentColor);
 }
-/*all above code is for header and footer  
+/*all above code is for header and footer*/
+
+
+
+/* Below code is for the main conten part
+Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: var(--contentfont);
+    background-color: var(--secondaryColor);
+    padding: 20px;
+}
+
+/* Page title styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Services container styles */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Service card styles */
+.service-card {
+    background-color: var(--primaryColor);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--secondaryColor);
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Service image styles */
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Service title styles */
+.service-card h2 {
+    color: var(--secondaryColor);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Service description styles */
+.service-card p {
+    font-size: 16px;
+    color: var(--secondaryColor);
+    margin-bottom: 15px;
+}
+
+/* "Learn More" button styles */
+.service-card button {
+    background-color: var(--accentColor);
+    color: var(--secondaryColor);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.service-card button:hover {
+    padding: 10px;
+}

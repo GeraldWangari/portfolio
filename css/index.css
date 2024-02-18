@@ -1,7 +1,7 @@
 :root{
     --secondaryColor:black;
-    --primaryColor:#4c8887;
-    --accentColor:#FFD166;
+    --primaryColor:white;
+    --accentColor:rgb(93, 241, 93);
     --headingfont:'Montserrat', sans-serif;
     --contentfont: "Lato", sans-serif;;
 }
@@ -101,4 +101,5 @@ main{
     height: auto;
     border-radius: 5%;
     margin-right: 10pt;
+    box-shadow: 0 4px 6px var(--secondaryColor);
 }
