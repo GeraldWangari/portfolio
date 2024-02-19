@@ -19,7 +19,7 @@ header {
     align-items: center;
     padding: 20px;
     background-color: var(--primaryColor);
-    border-bottom: 2px solid var(--accentColor);
+    border-bottom: 3px solid var(--accentColor);
 }
 
 .logo{

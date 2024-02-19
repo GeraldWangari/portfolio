@@ -9,6 +9,9 @@
 h1, h2, h3 {
     font-family: var(--headingfont)
 }  
+h1{
+    font-size: 55px;
+}
 body{
   background-color: var(--primaryColor);
   color: var(--secondaryColor);
@@ -20,7 +23,7 @@ header {
     align-items: center;
     padding: 20px;
     background-color: var(--primaryColor);
-    border-bottom: 1px solid var(--accentColor);
+    border-bottom: 3px solid var(--accentColor);
 }
 
 .logo{
@@ -150,11 +153,12 @@ footer {
 }
 
 .footer-section ul li a:hover {
-    color: var(--secondaryColor);
+    color: var(--accentColor);
 }
 
 .copyright {
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
+    color: var(--accentColor);
 }
