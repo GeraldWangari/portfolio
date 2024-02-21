@@ -1,8 +1,8 @@
-:root{
-    --secondaryColor:black;
-    --primaryColor:white;
-    --accentColor:rgb(93, 241, 93);
-    --headingfont:'Montserrat', sans-serif;
+:root {
+    --secondaryColor: black;
+    --primaryColor: white;
+    --accentColor: rgb(93, 241, 93);
+    --headingfont: 'Montserrat', sans-serif;
     --contentfont: "Lato", sans-serif;;
 }
 
@@ -68,8 +68,53 @@ header {
     color: var(--accentColor);
 }
 
-main {
-    border-bottom: 1px solid var(--accentColor);
+.navigation ul li.more {
+    display: none;
+}
+
+.main-menu:checked ~ .navigation ul li.more {
+    display: inline-block;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: var(--secondaryColor);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+    color: var(--accentColor);
+}
+
+@media (max-width: 767px) {
+    .logo img {
+        max-width: 40px;
+    }
+
+    .profile-image {
+        max-width: 100%;
+        border-radius: 50%;
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    .navigation ul li {
+        display: none;
+    }
+
+    .navigation ul li.more {
+        display: inline-block;
+        margin-right: 0;
+    }
+
+    .navigation {
+        position: relative;
+    }
+
+    .main-menu {
+        display: none;
+    }
 }
 
 .container {
@@ -168,14 +213,6 @@ footer {
 }
 
 /* Media queries for different screen sizes */
-
-/* For mobile devices */
-@media (max-width: 767px) {
-    .footer-section {
-        flex-basis: 100%; /* Make each section take full width */
-        margin-right: 0;
-    }
-}
 
 /* For tablets */
 @media (min-width: 768px) and (max-width: 991px) {
