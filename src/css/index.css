@@ -3,16 +3,12 @@
     --primaryColor: white;
     --accentColor: rgb(93, 241, 93);
     --headingfont: 'Montserrat', sans-serif;
-    --contentfont: "Lato", sans-serif;;
+    --contentfont: "Lato", sans-serif;
 }
 
 h1, h2, h3 {
     font-family: var(--headingfont);
 }  
-
-h1 {
-    font-size: 55px;
-}
 
 body {
     background-color: var(--primaryColor);
@@ -90,13 +86,6 @@ header {
 @media (max-width: 767px) {
     .logo img {
         max-width: 40px;
-    }
-
-    .profile-image {
-        max-width: 100%;
-        border-radius: 50%;
-        margin-right: 0;
-        margin-left: auto;
     }
 
     .navigation ul li {

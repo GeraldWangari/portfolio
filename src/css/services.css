@@ -1,9 +1,129 @@
-:root {
+:root{
+    --secondaryColor:black;
+    --primaryColor:white;
+    --accentColor:rgb(93, 241, 93);
+    --headingfont:'Montserrat', sans-serif;
+    --contentfont: "Lato", sans-serif;;
+}
+
+h1, h2, h3 {
+    font-family: var(--headingfont)
+}  
+body{
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+  font-family: var(--contentfont);
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primaryColor);
+    border-bottom: 3px solid var(--accentColor);
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    color: var(--accentColor);
+}
+.logo img {
+    max-width: 50px;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.navigation ul li:last-child {
+    margin-right: 0;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: var(--secondaryColor);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+    color: var(--accentColor);
+}
+main{
+    border-bottom: 1px solid var(--accentColor);
+}
+/*all above code is for header and footer*/
+
+
+
+/* Below code is for the main conten part
+
+Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: var(--contentfont);
+    background-color: var(--secondaryColor);
+    padding: 20px;
+}
+
+/* Page title styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Services container styles */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Service card styles */
+.service-card {
+    background-color: var(--primaryColor);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--secondaryColor);
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Service image styles */
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Service title styles */
+.service-card h2 {
+    color: var(--secondaryColor);
+    font-size: 24px;
+    margin-bottom: 10px;
+}:root {
     --secondaryColor: black;
     --primaryColor: white;
     --accentColor: rgb(93, 241, 93);
     --headingfont: 'Montserrat', sans-serif;
-    --contentfont: "Lato", sans-serif;;
+    --contentfont: "Lato", sans-serif;
 }
 
 h1, h2, h3 {
@@ -64,86 +184,84 @@ header {
     color: var(--accentColor);
 }
 
-.navigation ul li.more {
-    display: none;
+main {
+    border-bottom: 1px solid var(--accentColor);
 }
 
-.main-menu:checked ~ .navigation ul li.more {
-    display: inline-block;
+/* Below code is for the main content part */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.navigation ul li a {
-    text-decoration: none;
-    color: var(--secondaryColor);
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.navigation ul li a:hover {
-    color: var(--accentColor);
-}
-
-@media (max-width: 767px) {
-    .logo img {
-        max-width: 40px;
-    }
-
-    .navigation ul li {
-        display: none;
-    }
-
-    .navigation ul li.more {
-        display: inline-block;
-        margin-right: 0;
-    }
-
-    .navigation {
-        position: relative;
-    }
-
-    .main-menu {
-        display: none;
-    }
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.left-side {
-    flex: 1;
-    padding: 15px;
-    font-size: 20px;
-}
-
-.left-side button {
-    background-color: var(--accentColor);
-    padding: 10pt;
-    width: 40%;
-    border: 0;
-    border-radius: 5px;
-}
-
-.left-side button a {
-    text-decoration: none;
-    color: var(--secondaryColor);
-}
-
-.right-side {
-    flex: 1;
+/* Body styles */
+body {
+    font-family: var(--contentfont);
+    background-color: var(--secondaryColor);
     padding: 20px;
 }
 
-.profile-image {
-    float: right;
+/* Page title styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Services container styles */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Service card styles */
+.service-card {
+    background-color: var(--primaryColor);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--secondaryColor);
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Service image styles */
+.service-card img {
     width: 100%;
-    max-width: 50%;
     height: auto;
-    border-radius: 5%;
-    margin-right: 10pt;
-    box-shadow: 0 4px 6px var(--secondaryColor);
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Service title styles */
+.service-card h2 {
+    color: var(--secondaryColor);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Service description styles */
+.service-card p {
+    font-size: 16px;
+    color: var(--secondaryColor);
+    margin-bottom: 15px;
+}
+
+/* "Learn More" button styles */
+.service-card button {
+    background-color: var(--accentColor);
+    color: var(--secondaryColor);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.service-card button:hover {
+    padding: 10px;
 }
 
 /* Footer styles */
@@ -155,14 +273,12 @@ footer {
 
 .footer-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .footer-section {
     flex: 1;
     margin-right: 20px;
-    margin-bottom: 20px; /* Add margin bottom for better spacing on small screens */
 }
 
 .footer-section h3 {
@@ -198,20 +314,80 @@ footer {
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
-    color: var(--accentColor);
 }
 
-/* Media queries for different screen sizes */
 
-/* For tablets */
-@media (min-width: 768px) and (max-width: 991px) {
-    .footer-section {
-        flex-basis: calc(50% - 10px); /* Make each section take half width with spacing */
-        margin-right: 20px;
-    }
+/* Service description styles */
+.service-card p {
+    font-size: 16px;
+    color: var(--secondaryColor);
+    margin-bottom: 15px;
 }
 
-/* For desktops */
-@media (min-width: 992px) {
-    .footer-section {
-        flex-basis: calc(33.333% -
+/* "Learn More" button styles */
+.service-card button {
+    background-color: var(--accentColor);
+    color: var(--secondaryColor);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.service-card button:hover {
+    padding: 10px;
+}
+
+/*Below code is for footer style*/
+/* Footer styles */
+footer {
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: var(--secondaryColor);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: var(--secondaryColor);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
