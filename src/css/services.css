@@ -1,7 +1,8 @@
 :root{
-    --secondaryColor:black;
-    --primaryColor:white;
-    --accentColor:rgb(93, 241, 93);
+    --secondaryColor:white;
+    --primaryColor:rgb(24, 16, 94);
+    --primaryColor2: rgb(183, 110, 197);
+    --accentColor:#78dcfc;
     --headingfont:'Montserrat', sans-serif;
     --contentfont: "Lato", sans-serif;;
 }
@@ -10,7 +11,7 @@ h1, h2, h3 {
     font-family: var(--headingfont)
 }  
 body{
-  background-color: var(--primaryColor);
+  background-image:  linear-gradient(to bottom right, var(--primaryColor2),var(--primaryColor), var(--primaryColor2));
   color: var(--secondaryColor);
   font-family: var(--contentfont);
 header {

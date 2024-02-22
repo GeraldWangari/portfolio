@@ -1,21 +1,19 @@
-:root {
-    --secondaryColor: black;
-    --primaryColor: white;
-    --accentColor: rgb(93, 241, 93);
-    --headingfont: 'Montserrat', sans-serif;
-    --contentfont: "Lato", sans-serif;
+:root{
+    --secondaryColor:white;
+    --primaryColor:rgb(24, 16, 94);
+    --primaryColor2: rgb(183, 110, 197);
+    --accentColor:#78dcfc;
+    --headingfont:'Montserrat', sans-serif;
+    --contentfont: "Lato", sans-serif;;
 }
 
 h1, h2, h3 {
-    font-family: var(--headingfont);
+    font-family: var(--headingfont)
 }  
-
-body {
-    background-color: var(--primaryColor);
-    color: var(--secondaryColor);
-    font-family: var(--contentfont);
-}
-
+body{
+  background-image:  linear-gradient(to bottom right, var(--primaryColor2),var(--primaryColor), var(--primaryColor2));
+  color: var(--secondaryColor);
+  font-family: var(--contentfont);
 header {
     display: flex;
     justify-content: space-between;
@@ -24,7 +22,6 @@ header {
     background-color: var(--primaryColor);
     border-bottom: 3px solid var(--accentColor);
 }
-
 .logo {
     display: flex;
     flex-direction: row;
